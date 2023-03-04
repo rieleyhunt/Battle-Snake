@@ -1,0 +1,39 @@
+['up', 'down', 'left', 'right']
+['up', 'down', 'left', 'right']
+['up', 'down', 'left', 'right']
+['up', 'down', 'left', 'right']
+sneaky snek time 
+
+
+
+
+
+
+
+['up', 'left']
+['up']
+['up', 'left']
+['up', 'left']
+['down', 'left']
+['down', 'left']
+['down']
+['up']
+[]
+['up']
+sneaky snek time 
+
+
+
+
+
+
+
+sneaky snek time 
+
+
+
+
+
+
+
+['right']

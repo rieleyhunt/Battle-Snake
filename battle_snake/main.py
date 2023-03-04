@@ -26,10 +26,10 @@ def info() -> typing.Dict:
 
     return {
         "apiversion": "1",
-        "author": "",  # TODO: Your Battlesnake Username
-        "color": "#888888",  # TODO: Choose color
-        "head": "default",  # TODO: Choose head
-        "tail": "default",  # TODO: Choose tail
+        "author": "Tiernan, Ian, Saurabh, and Rieley", 
+        "color": "#454ADE",  # TODO: Choose color
+        "head": "do-sammy",  # TODO: Choose head
+        "tail": "do-sammy",  # TODO: Choose tail
     }
 
 
@@ -70,28 +70,6 @@ def move(game_state: GameState) -> typing.Dict:
 
     target_food = nearest_food(game_state["board"]["food"], me["head"])
     direction = decide_direction(me, valid_move_matrix, target_food)
-
-
-    # Are there any safe moves left?
-    # safe_moves = []
-    # for move, isSafe in is_move_safe.items():
-    #     if isSafe:
-    #         safe_moves.append(
-    #             move
-    #         )  # All safe moves are appended to the safe_moves list
-
-    # If there are no safe moves our snake moves down
-    # if len(safe_moves) == 0:
-    #     print(f"MOVE {game_state['turn']}: No safe moves detected! Moving down")
-    #     return {"move": "down"}
-
-    # Choose a random move from the safe ones
-    # next_move = random.choice(safe_moves)  # Here we will replace to find what the best move is!
-
-    # TODO: Step 4 - Move towards food instead of random, to regain health and survive longer
-    # food = game_state['board']['food']
-    # x,y = findFood(food, my_head)
-    # next_move = foodPath(x, y, safe_moves, my_head)
 
     print(f"MOVE {game_state['turn']}: ", end="")
     print(f"{direction['move']}")
